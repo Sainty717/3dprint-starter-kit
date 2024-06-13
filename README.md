@@ -33,10 +33,14 @@
 - **Description**: A YouTube channel that explores the possibilities of 3D printing and provides educational content on design and printing techniques.
 - **Link**: [Makers Muse YouTube](https://www.youtube.com/@MakersMuse)
 
+### All3DP
+- **Description**: A comprehensive resource for print temperatures and settings, as well as news, reviews, and guides on 3D printing.
+- **Link**: [All3DP](https://all3dp.com/)
+
 ## Checklist for Printing
 
-1. **Level the Bed**
-   - If you change the plastic (filament), adjust the temperature of the bed accordingly for proper leveling.
+1. **Level the Bed (Auto Bed Leveling)**
+   - Ensure your printer’s auto bed leveling function is properly calibrated. If you change the plastic (filament), adjust the temperature of the bed accordingly for proper leveling.
 
 2. **Clean the Bed**
    - Ensure the bed is free from any debris or previous print residue.
@@ -49,5 +53,47 @@
 
 5. **Print from Media**
    - Insert the SD card into the 3D printer and start printing.
+
+## Importing PrusaSlicer Configuration
+
+To ensure you have the optimal settings for your prints, you can import the provided PrusaSlicer configuration bundle.
+
+### Steps to Import PrusaSlicer Configuration Bundle
+
+1. **Download the Configuration File**
+   - Download the `PrusaSlicer_config_bundle.ini` file from the GitHub repository.
+
+2. **Open PrusaSlicer**
+   - Launch the PrusaSlicer application on your computer.
+
+3. **Go to Configuration Menu**
+   - In PrusaSlicer, navigate to the `File` menu.
+
+4. **Import Configuration**
+   - Select `Import` from the dropdown menu, then choose `Import Config Bundle...`.
+
+5. **Select the Configuration File**
+   - Locate the `PrusaSlicer_config_bundle.ini` file you downloaded and select it.
+
+6. **Confirm Import**
+   - PrusaSlicer will import the settings. You may need to restart the application for changes to take effect.
+
+## Good to Knows
+
+### Manual Bed Leveling
+- **Description**: Manual bed leveling involves adjusting the screws at the bottom of the bed to start with a level surface. This reduces the work the probe has to do to compensate during printing.
+- **Tip**: Begin by adjusting all screws to a similar tightness and then fine-tune each corner until the bed is level.
+
+### PID Tuning
+- **Description**: PID (Proportional-Integral-Derivative) tuning helps maintain a consistent temperature for your 3D printer’s hotend and heated bed.
+- **Tip**: Regular PID tuning can improve print quality by reducing temperature fluctuations. This can be done through your printer’s firmware settings or control panel.
+
+### Steps Tuning
+- **Description**: Steps tuning involves calibrating the steps per millimeter for your printer’s axes to ensure accurate movements.
+- **Tip**: Although usually not needed, it’s good to know how to perform steps tuning if you notice dimensional inaccuracies in your prints. Check your printer's manual for instructions.
+
+### Offsets
+- **Description**: Offsets refer to the adjustments made to account for the distance between the print bed and the nozzle when the printer is at its home position.
+- **Tip**: Properly setting your Z-offset is crucial for the first layer adhesion. Make small adjustments as needed to achieve the perfect first layer.
 
 By following this guide, you’ll be well on your way to creating amazing 3D prints. Happy printing!
